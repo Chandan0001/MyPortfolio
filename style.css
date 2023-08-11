@@ -1,0 +1,260 @@
+/*  */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto+Slab:wght@300;400&display=swap');
+
+body {
+    background-color: rgb(0, 0, 33);
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    height: 70px;
+    background-color: maroon;
+}
+
+nav ul {
+    display: flex;
+    justify-content:space-between;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover{
+    color: lightsalmon;
+    font-size: 1.04rem;
+}
+
+.left{
+    font-size: 1.5rem;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    /* background-color: blue; */
+    align-items: center;
+    margin: 80px 0
+}
+
+.firstSection > div{
+    width: 30%;
+    /* background-color: red; */
+}
+
+.leftSection {
+    font-size: 2rem;
+}
+
+.leftSection a{
+    text-decoration: none;
+}
+
+.leftSection .buttons {
+    padding: 40px 0;
+    /* position:-webkit-sticky; */
+}
+.leftSection .btn {
+    padding: 8px;
+    background-color: #3b0e64;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+    /* position:sticky; */
+}
+
+.rightSection img{
+    width: 80%;
+    
+}
+
+.purple {
+    color: blueviolet;
+}
+
+#element{
+    color: lavender;
+}
+
+/* Second Section CSS */
+
+.secondSection{
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+}
+
+main hr{
+    background: aqua;
+    margin: 40px 84px;
+    border: 0;
+    height: 1.2px;
+}
+
+.secondSection h1{
+    font-size: 1.8rem;
+}
+
+.secondSection .box {
+    background-color: white;
+    width: 80vw;
+    height: 2px;
+    margin: 56px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.secondSection .vertical {
+    height: 93px;
+    width: 1px;
+    background-color: white;
+    /* display: flex;
+    justify-content: space-between; */
+    margin: 0 100px;
+}
+
+.image-top{
+    width: 23px;
+    position: relative;
+    top: -20px;
+    left: -9px;
+}
+
+.image-top:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(7); 
+  }
+
+.vertical-title{
+    position: relative;
+    top: 75px;
+    width: 150px;
+}
+
+.vertical-desc{
+    position: relative;
+    top: 86px;
+    width: 150px;
+    font-size: 11px;
+    color: antiquewhite;
+}
+
+/* response css */
+
+footer {
+    background-color: #20122d;
+    /* height: 134px; */
+}
+
+.footer{
+    display: flex;
+    padding: 23px 122px;
+    justify-content: space-evenly;
+}
+
+.footer ul{
+    list-style: none;
+}
+
+.footer > div {
+    width: 230px;
+}
+
+/* Contact Form */
+
+.contactContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ctLeft{
+    margin-left: 30px;
+}
+/* Responsive page */
+
+@media screen and (max-width: 1200px) {
+  
+    /* body {
+        min-width:max-content;
+    } */
+
+    nav{
+        flex-direction: column;
+    }
+  .firstSection {
+    flex-direction: column-reverse;
+  }
+
+  .secondSection {
+    /* background-color: rgb(105, 105, 9); */
+    display: flex;
+    flex-direction: column;
+    /* padding: 321px 0 0; */
+    align-items: center;
+
+  }
+   .secondSection .box {
+    flex-direction: column;
+    width: 50vw;
+    /* justify-content:space-between; */
+    /* background-color: aqua; */
+  }
+
+  .secondSection, .vertical-desc {
+    left: 45px;
+  }
+
+  .secondSection .vertical {
+    height: unset;
+  }
+
+  .vertical-title {
+    top: -6px;
+    width: 250px;
+    /* margin: 8px 0; */
+  }
+  .vertical-desc {
+    top: 6px;
+    width: 250px;
+    /* margin: 31px 16px; */
+}
+
+ hr {
+    display: none;
+ }
+
+ .separateClass{
+    /* width: 250px; */
+
+    margin: 300px 0;
+    margin-left: 88px;
+    /* left: 100; */
+    /* right: 100; */
+ }
+
+.contactContainer{
+    flex-direction: column-reverse;
+}
+
+}
